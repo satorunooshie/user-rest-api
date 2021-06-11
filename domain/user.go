@@ -5,14 +5,14 @@ import (
 )
 
 type User struct {
-	ID        int
-	Name      string
-	Password  string
-	Age       int
-	Height    int
-	UpdatedAt time.Time
-	CreatedAt time.Time
-	DeletedAt time.Time
+	ID        int       `gorm:"primary_key" json:"id"`
+	Name      string    `json:"name"`
+	Password  string    `json:"-"`
+	Age       int       `json:"age"`
+	Height    int       `json:"height"`
+	UpdatedAt time.Time `json:"-"`
+	CreatedAt time.Time `json:"-"`
+	DeletedAt time.Time `json:"-"`
 }
 
 type Users []User
