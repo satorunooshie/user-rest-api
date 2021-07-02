@@ -5,9 +5,9 @@ import (
 )
 
 type UserRepository interface {
-	FindByID(int) (domain.User, error)
+	Find(int) (domain.User, error)
 	List() (domain.Users, error)
 	Store(domain.User) error
 	Update(domain.User) error
-	DeleteByID(int) error
+	Delete(int) error
 }
