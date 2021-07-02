@@ -1,11 +1,11 @@
 package user_rest_api
 
 import (
-	"github.com/satorunooshie/user-rest-api/infra/database"
 	"log"
 	"net/http"
 
 	"github.com/satorunooshie/user-rest-api/infra"
+	"github.com/satorunooshie/user-rest-api/infra/database"
 	"github.com/satorunooshie/user-rest-api/interface/controller"
 	"github.com/satorunooshie/user-rest-api/usecase/user"
 )
